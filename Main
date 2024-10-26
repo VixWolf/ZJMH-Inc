@@ -7,11 +7,31 @@ public class main {
     String month;
     int day;
     int year;
+    int hour;
+    int minutes;
 //added new variables//
 
     
     System.out.print("Please input your speed (mph): ");
     mph = scnr.nextInt();
+
+    System.out.print("Please input the month: " );
+    month = scnr.next();
+    
+    System.out.print("Please input the day: " );
+    day = scnr.nextInt();
+   
+    System.out.print("Please input the year: " );
+    year = scnr.nextInt();
+    
+    
+    System.out.print("Please input the hour: " );
+    hour = scnr.nextInt();
+    
+    
+    System.out.print("Please input the minutes: " );
+    minutes = scnr.nextInt();
+    
     System.out.println("");
     //Removed Print ("Enjoy your road trip!"), added a newline.//
 
@@ -19,15 +39,15 @@ public class main {
     
     if(mph >= 88){
       System.out.println("Month  " + "  Day   " + "   Year   " + "   AM " + " Hour " + "   Min" );
-      System.out.println("October  " + "26 " + "      1985  " + "         01       " + ":" + "    21");
+      System.out.println(month   + "     " +  day  + "       " +  year + "          " + hour + "     " + ":"  +  minutes);
       System.out.println("Destination Time");
 
       System.out.println("Month  " + "  Day   " + "   Year   " + "   AM " + " Hour " + "   Min" );
-      System.out.println("October  " + " 26 " + "      1985  " + "        01     " + ":" + " 22");
+      System.out.println(month   + "     " +  day  + "       " +  year + "          " + hour + "     " + ":"  +  minutes);
       System.out.println("             Present Time");
       
       System.out.println("Month  " + "  Day   " + "   Year   " + "   AM " + " Hour " + "   Min" );
-      System.out.println("October  " + " 26 " + "      1985  " + "        01     " + ":" + " 21");
+      System.out.println(month   + "     " +  day  + "       " +  year + "          " + hour + "     " + ":"  +  minutes);
       System.out.println("             Last Time Departed");
     }
   }
