@@ -1,0 +1,8 @@
+public class main {
+  public static void main {
+    Scanner scnr = new Scanner (System.in);
+    int mph; 
+
+    System.out.println("Enjoy your road trip!");
+    System.out.println("Please input your speed (mph): ");
+    mph = scnr.nextInt();
