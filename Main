@@ -1,13 +1,21 @@
 import java.util.Scanner;
+
 public class main {
-  public static void main {
+  public static void main(String[] args) {
     Scanner scnr = new Scanner (System.in);
     int mph;
+    String month;
+    int day;
+    int year;
+//added new variables//
 
     
-    System.out.println("Please input your speed" + (mph));
+    System.out.print("Please input your speed (mph): ");
     mph = scnr.nextInt();
-    System.out.println("Enjoy your road trip!");
+    System.out.println("");
+    //Removed Print ("Enjoy your road trip!"), added a newline.//
+
+    if (mph < 88) {}
     
     if(mph >= 88){
       System.out.println("Month  " + "  Day   " + "   Year   " + "   AM " + " Hour " + "   Min" );
@@ -21,7 +29,10 @@ public class main {
       System.out.println("Month  " + "  Day   " + "   Year   " + "   AM " + " Hour " + "   Min" );
       System.out.println("October  " + " 26 " + "      1985  " + "        01     " + ":" + " 21");
       System.out.println("             Last Time Departed");
-      
+    }
+  }
+}
+
     
       
       
