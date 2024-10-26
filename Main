@@ -10,11 +10,18 @@ public class main {
     System.out.println("Enjoy your road trip!");
     
     if(mph >= 88){
-      System.out.println();
+      System.out.println("Month  " + "  Day   " + "   Year   " + "   AM " + " Hour " + "   Min" );
+      System.out.println("October  " + "26 " + "      1985  " + "         01       " + ":" + "    21");
+      System.out.println("Destination Time");
+      
+    
+      
       
    
 
 
 
     }
+  }
+}
     
