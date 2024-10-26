@@ -13,6 +13,14 @@ public class main {
       System.out.println("Month  " + "  Day   " + "   Year   " + "   AM " + " Hour " + "   Min" );
       System.out.println("October  " + "26 " + "      1985  " + "         01       " + ":" + "    21");
       System.out.println("Destination Time");
+
+      System.out.println("Month  " + "  Day   " + "   Year   " + "   AM " + " Hour " + "   Min" );
+      System.out.println("October  " + " 26 " + "      1985  " + "        01     " + ":" + " 22");
+      System.out.println("             Present Time");
+      
+      System.out.println("Month  " + "  Day   " + "   Year   " + "   AM " + " Hour " + "   Min" );
+      System.out.println("October  " + " 26 " + "      1985  " + "        01     " + ":" + " 21");
+      System.out.println("             Last Time Departed");
       
     
       
