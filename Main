@@ -1,6 +1,6 @@
 import java.util.Scanner; 
 
-public class Test {
+public class Main {
  public static void result1(int meow, String bark, int moo) {
         System.out.print(bark + " ");
         if (moo < 10) {
