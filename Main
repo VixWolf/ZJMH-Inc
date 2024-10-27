@@ -1,7 +1,45 @@
 import java.util.Scanner; 
 public class main {
+ public static void result1(int meow, String bark, int moo) {
+        System.out.print(bark + " ");
+        if (moo < 10) {
+            System.out.print("0" + moo + ", ");
+        }
+            else {
+            System.out.print(moo + ", ");
+        }
+        if (meow < 10) {
+            System.out.print("000" + meow + " at ");
+                }
+        else if (meow < 100) {
+            System.out.print("00" + meow + " at ");
+        }
+        else if (meow < 1000) {
+            System.out.print("0" + meow + " at ");
+        }
+        else {
+            System.out.print(meow + " at ");
+        }
+    }
+    
+    public static void result2(int chirp, int oink, String caw) {
+        if (chirp < 10) {
+            System.out.print("0" + chirp + ":");
+                }
+        else {
+            System.out.print(chirp + ": ");
+        }
+        if (oink < 10) {
+            System.out.print("0" + oink + " " + caw);
+                }
+        else {
+            System.out.print(oink + " " + caw);
+        }
+    }
+
   public static void main(String[] args) {
     Scanner scnr = new Scanner (System.in);
+    int var;
     int mph;
     String month;
     int day;
@@ -20,6 +58,15 @@ public class main {
     if (mph < 88) {}
     
     if(mph >= 88){
+
+    do {
+      System.out.print("DeLorean version (1-3): ");
+      var = scnr.nextInt();
+      if ((var < 1) || (var > 4)) {
+                System.out.println("Invalid input. Try again.");
+            }
+        } while ((var < 1) || (var > 4));
+
       System.out.print("Month test:");
       month = scnr.next();
       if ((!month.equals("JAN")) && (!month.equals("FEB")) && (!month.equals("MAR")) && (!month.equals("APR")) && (!month.equals("MAY")) && (!month.equals("JUN")) && (!month.equals("JUL")) && (!month.equals("AUG")) && (!month.equals("SEP")) && (!month.equals("OCT")) && (!month.equals("NOV")) && (!month.equals("DEC"))) {
@@ -82,6 +129,88 @@ public class main {
       System.out.println(month   + "     " +  day  + "       " +  year + "          " + hour + "     " + ":"  +  minutes);
       System.out.println("             Last Time Departed");
     }
+
+ if (var == 1) {
+        System.out.println("                                                                                                                                                      ");
+        System.out.println("                                                                                                        |-|------|                      ___   _________           ");
+        System.out.println("                                                                      <^____________________________________||||______               __/ /#\\/ /#######\\         ");
+        System.out.println("                                                                       *--**************************||4884************\\__(((())))__/ /###/ /###########\\        ");
+        System.out.println("                                                                  *--*******************************||4884*****************\\2222/ /###/ /###############\\       ");
+        System.out.println("                                                           *--****//                              |*||4884*|   You've         \\****\\/ /#################||    ");
+        System.out.println("                                                     *----***//          _________________        |*||4884*|    returned to:    \\**/ /##################//   ");
+        System.out.print("                                               *--**X-(XXXXXX)|         /                \\       /**||4884*|     ");
+        result1(year, month, day);
+        System.out.println("   \\*****\\############//     ");
+        System.out.print("           ________________________________--*****XX--(XXXXXX)|________/__________________\\_____/***||4884*|______");
+        result2(nhour, minutes, time);
+        System.out.println("________|****************#//       ");
+        System.out.println("      /|########################################**\\***********************************************//**4884****************************************|##~}        ");
+        System.out.println("   /###|*******************************************\\****************************************O****//****488888888888888888888888888884*************|##~}        ");
+        System.out.println("|######|********************************************\\******************************************//*****************************4888888884**********|##~}        ");
+        System.out.println("|######|**************XXXXXXXXXXX********************\\****************************************//**********************XXXXXXXXXXXX*****488884*****|#####|       ");
+        System.out.println(" ###7777777######||XXXXXXXXXXXXXXX||##################\\#################################UUUU*//###################||XXXXXXXXXXXXXXXX||######48884**|#####|       ");
+        System.out.println("     \\********||XXXXXXXXXXXXXXXXXXX||*****************\\***********************************//*******************||XXXXXXXXXXXXXXXXXXX||*****48884####|       ");
+        System.out.println("      /######||XXXXXXXX000000XXXXXXXXX||****************\\*********************************//******************||XXXXXXXXX000000XXXXXXXX||######48884/        ");
+        System.out.println("     /#######||XXXXXXXX000000XXXXXXXXX||#################\\####################################################||XXXXXXXXX000000XXXXXXXX||#########/          ");
+        System.out.println("    /########||XXXXXXXX000000XXXXXXXXX||#######################################################################||XXXXXXXXX000000XXXXXXXX||#######/            ");
+        System.out.println("               \\XXXXXXXXXXXXXXXXXXX||###########################################################################\\XXXXXXXXXXXXXXXXXXX||                      ");
+        System.out.println("                 \\XXXXXXXXXXXXXXX||                                                                               \\XXXXXXXXXXXXXXX||                        ");
+        System.out.println("                   \\XXXXXXXXXXX||                                                                                   \\XXXXXXXXXXX||                          ");
+         }
+         if (var == 2) {
+             System.out.println("                                                                                                                            _--_                      ");
+        System.out.println("                                                                                                        |-|------|         <||||>       ___   _________           ");
+        System.out.println("                                                                      <^____________________________________||||______     <||||>    __/ /#\\/ /#######\\         ");
+        System.out.println("                                                                       *--**************************||####************\\__(((())))__/ /###/ /###########\\        ");
+        System.out.println("                                                                  *--*******************************||####*****************\\4884/ /###/ /###############\\       ");
+        System.out.println("                                                           *--****//                              |*||####*|         ==+[####]+\\****\\/ /#################||    ");
+        System.out.println("             You've returned to:                     *----***//           ________________        |*||####*|   //====//+[####]+   \\**/ /##################//   ");
+        System.out.print("                    ");
+        result1(year, month, day);
+        System.out.println("              *--**X-(XXXXXX)|          /               \\       /**||\\######//       +[####]+     \\*****\\############//     ");
+        System.out.print("           _____________");
+        result2(hour, minutes, time);
+        System.out.println("___________--*****XX--(XXXXXX)|_________/_________________\\____ /***||###\\##//_______________________||****************#//       ");
+        System.out.println("      /|########################################**\\***********************************************//**####****************************************|##~}        ");
+        System.out.println("   /###|*******************************************\\****************************************O****//****##############################*************|##~}        ");
+        System.out.println("|######|****##########################**************\\*******************************************//*****####********************##########*********|##~}        ");
+        System.out.println("|######[][][]##******XXXXXXXXXXX*****#####***********\\*****************************************//****####**************XXXXXXXXXXXX*****######****|#####|       ");
+        System.out.println(" ###777[]##[]####||XXXXXXXXXXXXXXX||#################*\\###################################UUUU//###################||XXXXXXXXXXXXXXXX||###########|#####|       ");
+        System.out.println("     \\[][][]**||XXXXXX======XXXXXXX||****####*********\\*************************************//**####************||XXXXXXX======XXXXXXX||*****#########|       ");
+        System.out.println("      /######||XXXXXX//OOOOOO\\XXXXXXX||****####********\\***********************************//*####************||XXXXXXX//OOOOOO\\XXXXXXX||###########/        ");
+        System.out.println("     /#######||XXXXXX||OOOOOO||XXXXXXX||#################\\#####################################################||XXXXXXX||OOOOOO||XXXXXXX||#########/          ");
+        System.out.println("    /########||XXXXXX\\OOOOOO//XXXXXXX||########################################################################||XXXXXXX\\OOOOOO//XXXXXXX||#######/            ");
+        System.out.println("               \\XXXXXX======XXXXXXX||#####################[<><><><><><><><><><><><><><><><>]#####################\\XXXXXXX======XXXXXXX||                      ");
+        System.out.println("                 \\XXXXXXXXXXXXXXX||                                                                                \\XXXXXXXXXXXXXXXX||                        ");
+        System.out.println("                   \\XXXXXXXXXXX||                                                                                    \\XXXXXXXXXXXX||                          ");        
+         }
+         if (var == 3) {
+             System.out.println("                                                                                                                            _--_                      ");
+        System.out.println("                                                                You've travelled to:                    |-|------|         <||||>       ___   _________           ");
+        System.out.println("                                                                      <^____________________________________||||______     <||||>    __/ /#\\/ /#######\\         ");
+        System.out.println("                                                                       *--**************************||####************\\__(((())))__/ /###/ /###########\\        ");
+        System.out.println("                                                                  *--*******************************||####*****************\\4884/ /###/ /###############\\       ");
+        System.out.print("                         <========________                 *--****//   ");
+        result1(year, month, day);
+        System.out.println("           |*||####||_O_||_O_||_O_|---+[####]+\\/ /################||    ");
+        System.out.print("          ___________  _[]_ ______|______|____         *----***//         _____");
+        result2(hour, minutes, time);
+        System.out.println("____      |*||####*||||  |||  |||----+[####]+\\/ /################//   ");
+        System.out.println("          |     ____|_(___ )__|    ____       |     *--**X-(XXXXXX)|     /                  \\   /*||\\###  |||  |||  ||| ----+[####]+\\#################//     ");
+        System.out.println("         (|_____|  |_____________|  |_____|--*****XX--(XXXXXX)|_________/____________________\\_/**||####\\(___)(___)(___) ___________________||*******#//       ");
+        System.out.println("      /|########################################**\\***********************************************//**####****************************************|##~}        ");
+        System.out.println("   /###|*******************************************\\****************************************O****//****##############################*************|##~}        ");
+        System.out.println("|######|****##########################**************\\*******************************************//*****####********************##########*********|##~}        ");
+        System.out.println("|######[][][]##******XXXXXXXXXXX*****#####***********\\*****************************************//****####**************XXXXXXXXXXXX*****######****|#####|       ");
+        System.out.println(" ######[]##[]####||XX           XX||#################*\\###################################UUUU//###################||XX            XX||###########|#####|       ");
+        System.out.println("     \\[][][]**||XX    ======     XX||****####*********\\*************************************//**####************||XX     ======     XX||*****#########|       ");
+        System.out.println("     /######||XX     //OOOOOO\\     XX||****####********\\***********************************//*####************||XX     //OOOOOO\\     XX||###########/        ");
+        System.out.println("    /#######||XX     ||OOOOOO||     XX||#################\\#####################################################||XX     ||OOOOOO||     XX||#########/          ");
+        System.out.println("   /########||XX     \\OOOOOO//     XX||########################################################################||XX     \\OOOOOO//     XX||#######/            ");
+        System.out.println("              \\XX     ======     XX||#####################[<><><><><><><><><><><><><><><><>]#####################\\XX     ======     XX||                      ");
+        System.out.println("                \\XX            XX||                                                                                \\XX            XX||                        ");
+        System.out.println("                  \\XXXXXXXXXXXX||                                                                                     \\XXXXXXXXXXXX||                          ");
+         }
   }
 }
 
