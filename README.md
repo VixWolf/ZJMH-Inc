@@ -27,4 +27,7 @@ Once all variables are initialized, the date that they have traveled to will app
 **[DEPENDENT ON MICHAEL: We can add a feature that shows how far away in time the present is from the time time traveled to. (Ask Jan if confused)]
 
 Once this is all done, the code will be reviewed by all parties and Jan will share it to Devpost. Afterwards, we vibe to Yuno Miles.
+
+https://devpost.com/software/745002/joins/ph6p0Q6IPptEa54P5_LnQQ
+
 */
