@@ -1,78 +1,75 @@
-import java.util.Scanner;
-
+import java.util.Scanner; 
 public class main {
-public static void result(int meow, String bark, int moo, int chirp, int oink, String caw) {
-        System.out.print(bark + " ");
-        if (moo < 10) {
-            System.out.print("0" + moo + ", ");
-        }
-            else {
-            System.out.print(moo + ", " + meow + " at ");
-        }
-        if (meow < 10) {
-            System.out.print("000" + meow + " at ");
-                }
-        else if (meow < 100) {
-            System.out.print("00" + meow + " at ");
-        }
-        else if (meow < 1000) {
-            System.out.print("0" + meow + " at ");
-        }
-        else {
-            System.out.print(meow + " at ");
-        }
-        if (chirp < 10) {
-            System.out.print("0" + chirp + ":");
-                }
-        else {
-            System.out.print(chirp + ": ");
-        }
-        if (oink < 10) {
-            System.out.print("0" + oink + " " + caw);
-                }
-        else {
-            System.out.print(oink + " " + caw);
-        }
-    }
-//ADDED METHOD - MICHAEL: IMPLEMENT THIS//
-
   public static void main(String[] args) {
     Scanner scnr = new Scanner (System.in);
     int mph;
     String month;
     int day;
     int year;
+    String time;
     int hour;
     int minutes;
 //added new variables//
 
     
     System.out.print("Please input your speed (mph): ");
-    mph = scnr.nextInt();
-
-    System.out.print("Please input the month: " );
-    month = scnr.next();
-    
-    System.out.print("Please input the day: " );
-    day = scnr.nextInt();
-   
-    System.out.print("Please input the year: " );
-    year = scnr.nextInt();
-    
-    
-    System.out.print("Please input the hour: " );
-    hour = scnr.nextInt();
-    
-    
-    System.out.print("Please input the minutes: " );
-    minutes = scnr.nextInt();
-    
+    mph = scnr.nextInt(); 
     System.out.println("");
     //Removed Print ("Enjoy your road trip!"), added a newline.//
 
     if (mph < 88) {}
     
     if(mph >= 88){
+      System.out.print("Month test:");
+      month = scnr.next();
+      if ((!month.equals("JAN")) && (!month.equals("FEB")) && (!month.equals("MAR")) && (!month.equals("APR")) && (!month.equals("MAY")) && (!month.equals("JUN")) && (!month.equals("JUL")) && (!month.equals("AUG")) && (!month.equals("SEP")) && (!month.equals("OCT")) && (!month.equals("NOV")) && (!month.equals("DEC"))) {
+      System.out.println("Invalid input. Try again (MAKE SURE LETTERS ARE CAPITALIZED)");
+      System.out.print("Please input the month: " );
+      month = scnr.next();
+      }
+
+      System.out.print("Day Test: ");
+      day = scnr.nextInt();
+      if ((day < 1) || (day > 32)) {   
+      System.out.println("Invalid input. Try again.");
+      System.out.print("Please input the day: " );
+      day = scnr.nextInt();
+      }
+
+      System.out.print("Year Test: ");
+      year = scnr.nextInt();
+      if ((year < 0) || (year > 9999)) {
+      System.out.println("Invalid input. Try again.");
+      System.out.print("Please input the year: " );
+      year = scnr.nextInt();
+      }
+
+      System.out.print("AM or PM? ");
+      time = scnr.next();
+      if ((!time.equals("AM"))&&(!time.equals("PM"))){
+      System.out.println("Invalid input. Try again.");
+      System.out.print("Please input Am or PM");
+      time = scnr.next();
+      }
+
+      System.out.print("Hour Test: ");
+      hour = scnr.nextInt();
+      if ((hour < 1) || (hour > 12)) {
+      System.out.println("Invalid input. Try again.");
+      System.out.print("Please input the hour: " );
+      hour = scnr.nextInt();
+      }
+
+      System.out.print("Minutes test: ");
+      minutes = scnr.nextInt();
+      if ((minutes < 0) || (minutes >= 60)) {
+      System.out.println("Invalid input. Try again.");
+      System.out.print("Please input the minutes: " );
+      minutes = scnr.nextInt();
+      }
+      
+
+
       System.out.println("Month  " + "  Day   " + "   Year   " + "   AM " + " Hour " + "   Min" );
       System.out.println(month   + "     " +  day  + "       " +  year + "          " + hour + "     " + ":"  +  minutes);
       System.out.println("Destination Time");
@@ -90,71 +87,6 @@ public static void result(int meow, String bark, int moo, int chirp, int oink, S
 
     
       
-
-/* MICHAEL: USE THIS AND IMPLEMENT
-
-public static void main(String[] args) {
-        Scanner scnr = new Scanner (System.in);
-        int newYear;
-        String newMonth;
-        int newDay;
-        int newHour;
-        int newMinute;
-        String neigh;
-        
-         do {
-            System.out.print("newYear Test: ");
-            newYear = scnr.nextInt();
-            if ((newYear < 0) || (newYear > 9999)) {
-                System.out.println("Invalid input. Try again.");
-            }
-         } while ((newYear < 0) || (newYear > 9999));
-         
-         do {
-            System.out.print("newMonth test (XXX): ");
-            newMonth = scnr.next();
-            if ((!newMonth.equals("JAN")) && (!newMonth.equals("FEB")) && (!newMonth.equals("MAR")) && (!newMonth.equals("APR")) && (!newMonth.equals("MAY")) && (!newMonth.equals("JUN")) && (!newMonth.equals("JUL")) && (!newMonth.equals("AUG")) && (!newMonth.equals("SEP")) && (!newMonth.equals("OCT")) && (!newMonth.equals("NOV")) && (!newMonth.equals("DEC"))) {
-                System.out.println("Invalid input. Try again (MAKE SURE LETTERS ARE CAPITALIZED)");
-            }
-         } while ((!newMonth.equals("JAN")) && (!newMonth.equals("FEB")) && (!newMonth.equals("MAR")) && (!newMonth.equals("APR")) && (!newMonth.equals("MAY")) && (!newMonth.equals("JUN")) && (!newMonth.equals("JUL")) && (!newMonth.equals("AUG")) && (!newMonth.equals("SEP")) && (!newMonth.equals("OCT")) && (!newMonth.equals("NOV")) && (!newMonth.equals("DEC")));
-            
-         do {
-            System.out.print("newDay Test: ");
-            newDay = scnr.nextInt();
-            if ((newDay < 1) || (newDay > 32)) {
-                System.out.println("Invalid input. Try again.");
-            }
-         } while ((newDay < 1) || (newDay > 32));
-         
-         do {
-            System.out.print("newHour Test: ");
-            newHour = scnr.nextInt();
-            if ((newHour < 1) || (newHour > 12)) {
-                System.out.println("Invalid input. Try again.");
-            }
-            } while ((newHour < 1) || (newHour > 12));
-         
-         do {
-            System.out.print("newMinute test: ");
-            newMinute = scnr.nextInt();
-            if ((newMinute < 0) || (newMinute >= 60)) {
-                System.out.println("Invalid input. Try again.");
-            }
-         } while ((newMinute < 0) || (newMinute > 60));
-         
-         do {
-            System.out.print("AM or PM? ");
-            neigh = scnr.next();
-         if ((!neigh.equals("AM"))&&(!neigh.equals("PM"))) {
-             System.out.println("Invalid input. Try again.");
-         }
-         } while ((!neigh.equals("AM"))&&(!neigh.equals("PM")));
-        
-         System.out.println("   You've returned to:   ");
-        result(newYear, newMonth, newDay, newHour, newMinute, neigh);
-        System.out.print("!");
-    }
-*/
 
 
     
