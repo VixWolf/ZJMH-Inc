@@ -1,3 +1,5 @@
+package vix.javaprojects.ZJMH-Inc;
+
 import java.util.Scanner; 
 
 public class Main {
